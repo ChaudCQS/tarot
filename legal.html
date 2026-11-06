@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私与免责 · 塔罗抽牌</title>
+<meta name="description" content="这个页面存了什么、什么时候会把数据发出去、牌面来源与免责说明。">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131209'/%3E%3Cpath d='M16 6l2.6 7.4L26 16l-7.4 2.6L16 26l-2.6-7.4L6 16l7.4-2.6z' fill='%23C8A96A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="legal">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="主导航">
+    <a class="nav-brand" href="index.html">
+      <svg class="nav-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 3l2.2 6.3L20.5 11l-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-1.7z"/>
+      </svg>
+      <span class="title-3">塔罗抽牌</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="table.html">牌桌</a>
+      <a class="nav-link" href="spreads.html">牌阵</a>
+      <a class="nav-link" href="faq.html">常见问题</a>
+    </div>
+    <button class="btn btn-ghost nav-link nav-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobilePanel" type="button">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      菜单
+    </button>
+    <a class="btn btn-primary" href="table.html">开始抽牌</a>
+  </nav>
+</div>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="菜单" aria-modal="true">
+  <button type="button" class="mobile-close" id="mobileClose" aria-label="关闭菜单">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="table.html">牌桌</a>
+  <a href="spreads.html">牌阵</a>
+  <a href="faq.html">常见问题</a>
+</div>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1 class="heading-2">隐私与免责</h1>
+      <p class="hero-sub">这个页面不收集你，但有几件事要说清楚。</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--s-600);">
+    <div class="wrap" style="max-width: 680px;">
+      <h2 class="heading-5">这个页面存了什么</h2>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">只存一样东西：你在设置里填的 DeepSeek API key、模型名、是否算逆位。这三项写在你当前浏览器的 localStorage 里，键名 <code>tarot.settings.v1</code>，点「清除 key」就删掉。</p>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">页面没有账号、没有统计脚本、没有第三方埋点。你写的问题和抽到的牌只存在内存里，换页或刷新就没了。</p>
+
+      <h2 class="heading-5" style="margin-top: var(--s-600);">什么时候会把数据发出去</h2>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">只在牌桌上点「生成解读」的那一刻。发出去的是：你写的问题、牌阵名称、抽到的牌与其位置。收件方是 <a href="https://www.deepseek.com" style="color: var(--gold);">DeepSeek</a> 的接口，用你填的 key 计费。除此之外没有任何请求离开这台机器。</p>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">页面本身是静态文件，没有后端，所以它不保管你的 key，也无法撤回已经发出的请求。共用电脑请自己清掉 key。</p>
+
+      <h2 class="heading-5" style="margin-top: var(--s-600);">牌面与文字</h2>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">牌面为 Rider-Waite-Smith 塔罗（1909 年，Pamela Colman Smith 绘制），已入公有领域。牌义文字取自韦特体系的通行解释，写在页面本地的数据文件里，不联网生成。</p>
+
+      <h2 class="heading-5" style="margin-top: var(--s-600);">免责</h2>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">塔罗用于自我提问和换个角度看事情，不是预测工具。页面给出的牌义和 AI 解读都不构成医疗、法律、投资、心理治疗的建议，也不替代专业意见。涉及身体、法律纠纷、金钱决定的事，请找对应领域的人。</p>
+      <p class="body-3 muted" style="margin-top: var(--s-200);">AI 解读由模型生成，可能出错、可能读偏，也可能与你无关。把它当一面镜子，不要当结论。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="caption-5">塔罗抽牌 · 本地静态页面，无后端无账号。</p>
+    </div>
+    <div>
+      <a class="caption-4" href="spreads.html">牌阵说明</a>
+      <a class="caption-4" href="table.html">回到牌桌</a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>

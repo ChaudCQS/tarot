@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>常见问题 · 塔罗抽牌</title>
+<meta name="description" content="牌是不是随机的、逆位怎么算、AI 解读从哪来、API key 存在哪、牌义依据、抽完做什么。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131209'/%3E%3Cpath d='M16 6l2.6 7.4L26 16l-7.4 2.6L16 26l-2.6-7.4L6 16l7.4-2.6z' fill='%23C8A96A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "牌是随机抽的吗",
+      "acceptedAnswer": { "@type": "Answer", "text": "是。每次抽牌都用浏览器的加密随机数洗整副牌再切出你选的位置，不预设结果，同一个问题抽两次结果会不一样。" }
+    },
+    {
+      "@type": "Question",
+      "name": "逆位怎么算",
+      "acceptedAnswer": { "@type": "Answer", "text": "默认按正逆位各一半的概率出牌，逆位读同一张牌受阻或过头的那一面。不想算逆位可以在设置里关掉。" }
+    },
+    {
+      "@type": "Question",
+      "name": "AI 解读是怎么来的",
+      "acceptedAnswer": { "@type": "Answer", "text": "页面把问题、牌阵和抽到的牌按位置整理成提示词，直接发给 DeepSeek 的接口，由它写回解读。页面没有后端。" }
+    },
+    {
+      "@type": "Question",
+      "name": "API key 存在哪",
+      "acceptedAnswer": { "@type": "Answer", "text": "存在本机浏览器的本地存储里，只在点生成解读时随请求发给 DeepSeek，不上传到别处。" }
+    },
+    {
+      "@type": "Question",
+      "name": "牌义的依据是什么",
+      "acceptedAnswer": { "@type": "Answer", "text": "韦特体系里通行的牌义，写在页面本地的数据文件里，不联网、不临时生成。" }
+    },
+    {
+      "@type": "Question",
+      "name": "抽完该做什么",
+      "acceptedAnswer": { "@type": "Answer", "text": "把牌面记下来，过一段时间回头对照。牌是帮你换个角度提问的工具，不负责给结论。" }
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="faq">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="主导航">
+    <a class="nav-brand" href="index.html">
+      <svg class="nav-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 3l2.2 6.3L20.5 11l-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-1.7z"/>
+      </svg>
+      <span class="title-3">塔罗抽牌</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="table.html">牌桌</a>
+      <a class="nav-link" href="spreads.html">牌阵</a>
+      <a class="nav-link" href="faq.html" aria-current="page">常见问题</a>
+    </div>
+    <button class="btn btn-ghost nav-link nav-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobilePanel" type="button">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      菜单
+    </button>
+    <a class="btn btn-primary" href="table.html">开始抽牌</a>
+  </nav>
+</div>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="菜单" aria-modal="true">
+  <button type="button" class="mobile-close" id="mobileClose" aria-label="关闭菜单">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="table.html">牌桌</a>
+  <a href="spreads.html">牌阵</a>
+  <a href="faq.html">常见问题</a>
+</div>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1 class="heading-2">常见问题</h1>
+      <p class="hero-sub">六条，都是被问过的。</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="faq">
+        <details class="reveal">
+          <summary>牌是随机抽的吗<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>是。每次点抽牌都用浏览器的加密随机数洗整副牌再切出你选的位置，不预设结果，同一个问题抽两次结果会不一样。</p>
+        </details>
+        <details class="reveal">
+          <summary>逆位怎么算<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>默认按正逆位各一半的概率出牌，逆位读法用的是同一张牌受阻或过头的那一面。不想算逆位，可以在设置里关掉。</p>
+        </details>
+        <details class="reveal">
+          <summary>AI 解读是怎么来的<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>页面把你写的问题、选的牌阵和抽到的牌，按位置整理成一段提示词，直接发给 DeepSeek 的接口，由它写回解读。中间没有别人的服务器。</p>
+        </details>
+        <details class="reveal">
+          <summary>API key 存在哪<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>存在你这台电脑的浏览器本地存储里，只在点生成解读时随请求发给 DeepSeek。页面没有后端，key 不上传到别处。共用电脑记得清掉。</p>
+        </details>
+        <details class="reveal">
+          <summary>牌义的依据是什么<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>韦特体系里通行的牌义，写在页面本地的数据文件里，不联网、不临时生成。不同流派的细节解释会有出入，这里取最主流的一层。</p>
+        </details>
+        <details class="reveal">
+          <summary>抽完该做什么<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <p>把牌面记下来，过一段时间回头对照。牌是帮你换个角度提问的工具，不负责给结论，更不替代你做决定。</p>
+        </details>
+      </div>
+      <div class="spread-cta reveal">
+        <a class="btn btn-secondary btn-lg" href="legal.html">隐私与免责</a>
+        <a class="btn btn-primary btn-lg" href="table.html">去牌桌抽一次</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="caption-5">牌面为 Rider-Waite-Smith 塔罗（1909，Pamela Colman Smith 绘），已入公有领域。</p>
+      <p class="caption-5" style="margin-top: var(--s-75);">牌义数据取自韦特体系通行解释，存于本地文件。</p>
+    </div>
+    <div>
+      <a class="caption-4" href="spreads.html">牌阵说明</a>
+      <a class="caption-4" href="legal.html">隐私与免责</a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>

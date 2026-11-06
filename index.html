@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>塔罗抽牌 · 78 张韦特牌与 14 种牌阵</title>
+<meta name="description" content="写下你的问题，选一种牌阵，抽牌、翻牌，按牌面拿到一段解读。韦特塔罗 78 张，14 种牌阵，从单张到凯尔特十字。">
+<meta property="og:title" content="塔罗抽牌 · 78 张韦特牌与 14 种牌阵">
+<meta property="og:description" content="写下你的问题，选一种牌阵，抽牌、翻牌，按牌面拿到一段解读。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23131209'/%3E%3Cpath d='M16 6l2.6 7.4L26 16l-7.4 2.6L16 26l-2.6-7.4L6 16l7.4-2.6z' fill='%23C8A96A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div class="nav-shell">
+  <nav class="nav" aria-label="主导航">
+    <a class="nav-brand" href="index.html">
+      <svg class="nav-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 3l2.2 6.3L20.5 11l-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-1.7z"/>
+      </svg>
+      <span class="title-3">塔罗抽牌</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="table.html">牌桌</a>
+      <a class="nav-link" href="spreads.html">牌阵</a>
+      <a class="nav-link" href="faq.html">常见问题</a>
+    </div>
+    <button class="btn btn-ghost nav-link nav-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobilePanel" type="button">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+      菜单
+    </button>
+    <a class="btn btn-primary" href="table.html">开始抽牌</a>
+  </nav>
+</div>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="菜单" aria-modal="true">
+  <button type="button" class="mobile-close" id="mobileClose" aria-label="关闭菜单">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <a href="table.html">牌桌</a>
+  <a href="spreads.html">牌阵</a>
+  <a href="faq.html">常见问题</a>
+</div>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="heading-1">抽一次牌<br>看清眼下这件事</h1>
+      <p class="hero-sub">韦特塔罗 78 张，14 种牌阵。写下问题，抽牌、翻牌，按牌面拿到一段解释。哪张牌落在哪个位置，比你想象的重要。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="table.html">开始抽牌</a>
+        <a class="btn btn-secondary btn-lg" href="spreads.html">先看牌阵</a>
+      </div>
+      <div class="hero-facts">
+        <span class="hero-fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="12" height="16" rx="2"/><path d="M9 3h12v16"/></svg>
+          78 张公版韦特牌
+        </span>
+        <span class="hero-fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          14 种牌阵
+        </span>
+        <span class="hero-fact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5"/><circle cx="12" cy="15" r="3"/></svg>
+          牌义写在本地，AI 解读另接
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三张牌摆开的样子，进到视口自己翻一遍，纯装饰 -->
+  <section class="fan-sec" aria-hidden="true">
+    <div class="wrap">
+      <div class="fan" id="fan">
+        <div class="fan-card">
+          <div class="fan-inner">
+            <div class="fan-face back"></div>
+            <div class="fan-face front"><img src="assets/cards/maj01.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="fan-card">
+          <div class="fan-inner">
+            <div class="fan-face back"></div>
+            <div class="fan-face front"><img src="assets/cards/maj13.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="fan-card">
+          <div class="fan-inner">
+            <div class="fan-face back"></div>
+            <div class="fan-face front"><img src="assets/cards/cups01.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tagline" aria-label="一句话">
+    <div class="wrap">
+      <p id="tagline">牌不替你决定。它把你说不清的那半句，换个说法讲出来。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="caption-5">牌面为 Rider-Waite-Smith 塔罗（1909，Pamela Colman Smith 绘），已入公有领域。</p>
+      <p class="caption-5" style="margin-top: var(--s-75);">牌义数据取自韦特体系通行解释，存于本地文件。</p>
+    </div>
+    <div>
+      <a class="caption-4" href="faq.html">常见问题</a>
+      <a class="caption-4" href="legal.html">隐私与免责</a>
+    </div>
+  </div>
+</footer>
+
+<script src="common.js"></script>
+</body>
+</html>
